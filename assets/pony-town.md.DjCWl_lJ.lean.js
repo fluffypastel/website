@@ -1,0 +1,1 @@
+import{_ as r,c as n,o,ae as t}from"./chunks/framework.Cd-3tpCq.js";const w=JSON.parse('{"title":"Pony Town","description":"","frontmatter":{},"headers":[],"relativePath":"pony-town.md","filePath":"pony-town.md"}'),a={name:"pony-town.md"};function l(i,e,s,f,h,p){return o(),n("div",null,e[0]||(e[0]=[t("",9)]))}const u=r(a,[["render",l]]);export{w as __pageData,u as default};
