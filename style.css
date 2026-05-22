@@ -1,0 +1,242 @@
+HTML,
+BODY,
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff5f6;
+    background-image: radial-gradient(#ffd5dc 15%, transparent 16%),
+                      radial-gradient(#ffd5dc 15%, transparent 16%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    color: #5c3a43;
+    text-align: center;
+    font-size: 14pt;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+h1, h2, h3 {
+    color: #ff527b;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+h1 img {
+    height: 45px;
+    vertical-align: middle;
+}
+
+hr {
+    width: 85%;
+    max-width: 800px;
+    border: none;
+    border-top: 4px dashed #ffb3c1;
+    margin: 30px auto;
+}
+
+::selection {
+    background: #ffcbd5;
+    color: #5c3a43;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+li {
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ff527b;
+    font-size: 1.1rem;
+}
+
+ul > ul {
+    margin-left: 30px;
+}
+
+b,
+strong {
+    color: #d12c56;
+}
+
+u {
+    text-decoration-color: #ff527b;
+    text-underline-offset: 3px;
+}
+
+a {
+    color: #ff527b;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+}
+
+a:hover,
+a:focus {
+    color: #ff1c50;
+}
+
+/* Mascot Container Styles */
+.kitka-box {
+    display: block;
+    width: fit-content;
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    border: 4px solid #ffb3c1;
+    margin: 20px auto;
+    max-width: 280px;
+    animation: floaty 4s ease-in-out infinite;
+}
+
+.kitka-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.mascot-caption {
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff527b;
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+}
+
+/* Control Buttons styling */
+p button {
+    background-color: white;
+    border: 3px solid #ffb3c1;
+    color: #ff527b;
+    border-radius: 12px;
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+p button:active {
+    transform: translate(1px, 1px);
+}
+
+p button:hover {
+    background-color: #fff0f2;
+}
+
+#quote {
+    font-style: italic;
+    font-weight: bold;
+    color: #ff527b;
+    background-color: #fff0f2;
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: 2px dashed #ffb3c1;
+    display: block;
+    width: fit-content;
+    max-width: 80%;
+    margin: 15px auto;
+}
+
+#counter {
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    padding: 8px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #ffb3c1;
+}
+
+.nav {
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.navlink {
+    width: 110px;
+    height: 44px;
+    background-color: white;
+    border: 3px solid #ffb3c1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.navlink:hover {
+    transform: translateY(-2px);
+    background-color: #fff0f2;
+}
+
+#footer {
+    font-size: smaller;
+    width: 85%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    background: white;
+    border-radius: 16px;
+    border: 4px solid #ffb3c1;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 24px;
+    border: 4px solid #ffb3c1;
+}
+
+span.highlight {
+    color: #fff;
+    background: #ff527b;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
