@@ -7,7 +7,10 @@
     <title>~Kitka is Foaling Around</title>
     <link rel="icon" type="image/x-icon" href="kitka.png"> 
 
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- quote randomizer -->
+    <script src="js/quote.js"></script>
   </head>
   <body> 
 
@@ -42,33 +45,5 @@
 
 <hr>
 
-<!-- quote randomizer -->
-<script>
-window.onload = replace;
-
-var words = {
-  quote: [
-    "KitKat? No, I am Kitka.", 
-    "I love my friends!", 
-    "Who wouldn't eat a chocolate cake anyways...",
-    "Yes I am a skunk..",
-    "🦨🦨🦨",
-    "Oh did you just paw at my site?"
-  ]
-};
-
-function replace() {
-  let textbox = document.getElementById("quote");
-  var text = textbox.innerHTML;
-  for (const [key, value] of Object.entries(words)) {
-    text = text.replace(
-      `#${key}`,
-      value[Math.floor(Math.random() * value.length)]
-    );
-  }
-  textbox.innerHTML = text;
-}
-</script>
-<!-- end of quote randomizer -->
 </body>
 </html>
